@@ -1,6 +1,6 @@
 import React from 'react'
-import LightMode from "../assets/light-mode.png"
-import Darkmode from "../assets/dark-mode.png"
+import LightMode from "../../assets/light-mode.png"
+import Darkmode from "../../assets/dark-mode.png"
 
 const DarkMode = () => {
 
@@ -19,6 +19,7 @@ const DarkMode = () => {
             localStorage.setItem("theme","light");
         }
     }, [theme]);
+    
   return (
     <div className='relative'>
       <img 
