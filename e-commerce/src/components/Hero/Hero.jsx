@@ -96,8 +96,6 @@ const Hero = () => {
     
                 </div>
             </div>
-    
-
             ))}
         
         </Slider>
