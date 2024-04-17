@@ -13,6 +13,7 @@ const ProductsData =[
         title: "Women Ethinc",
         rating: 5.0,
         author: "white",
+        color:"#fcfafc",
         aosDelay: "0",
     },
     {
@@ -21,6 +22,7 @@ const ProductsData =[
         title: "Women Western",
         rating: 4.5,
         author: "Red",
+        color:"#fcba03",
         aosDelay: "200",
     },
     {
@@ -29,6 +31,7 @@ const ProductsData =[
         title: "Goggles",
         rating: 5.0,
         author: "brown",
+        color:"#066cba",
         aosDelay: "400",
     },
     {
@@ -37,6 +40,7 @@ const ProductsData =[
         title: "Fashin T-Shirt",
         rating: 4.5,
         author: "Pink",
+        color:"#8106ba",
         aosDelay: "800",
     },
     {
@@ -45,7 +49,9 @@ const ProductsData =[
         title: "Printed T-Shirt",
         rating: 4.4,
         author: "Yellow",
+        color:"#fcba03",
         aosDelay: "600",
+        
     },
     
 
@@ -71,16 +77,22 @@ const Products = () => {
                 gap-5'>
                     {/* Card Section */}
                     {ProductsData.map((data)=>(
-                        <div key={data.id} className='space-y-3'>
+                        <div  
+                        data-aos="fade-up"
+                        data-aos-delay={data.aosDelay}
+                        key={data.id}
+                        className="space-y-3 ">
+                            
                             <img
                             src={data.img}
                             alt=''
-                            className='h-[220px] w-[150px]
-                            object-cover rounded-md' 
+                            className={`h-[220px] w-[150px]
+                            object-cover rounded-md bg-[${data.color}]` }
                             />
                             <div>
                                 <h3 className='font-semibold'>{data.title}</h3>
-                                <p className='text-sm text-gray-600 '>{data.color}</p>
+                                <p className='text-sm text-gray-600 '>
+                                {data.author}</p>
                                 <div className='flex items-center'>
                                     <FaStar className='text-yellow-400'/>
                                     <span>{data.rating}</span>
