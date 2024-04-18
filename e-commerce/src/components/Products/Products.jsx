@@ -41,7 +41,7 @@ const ProductsData =[
         rating: 4.5,
         author: "Pink",
         color:"#8106ba",
-        aosDelay: "800",
+        aosDelay: "600",
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const ProductsData =[
         rating: 4.4,
         author: "Yellow",
         color:"#fcba03",
-        aosDelay: "600",
+        aosDelay: "800",
         
     },
     
@@ -64,9 +64,9 @@ const Products = () => {
 
             <div className='text-center mb-10 max-w[600px]
             mx-auto'>
-                <p className='text-sm text-primary '>Products for you</p>
-                <h1 className='text-3xl font-bold'>Produts</h1>
-                <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet, consectetur 
+                <p data-aos="fade-up" className='text-sm text-primary '>Products for you</p>
+                <h1 data-aos="fade-up" className='text-3xl font-bold'>Produts</h1>
+                <p  data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet, consectetur 
                    adipiscing elit, sed do eiusmod tempor incididunt ut 
                    labore et dolore magna aliqua</p>
             </div>
@@ -101,6 +101,14 @@ const Products = () => {
 
                         </div>
                     ))}
+                </div>
+                {/* view all button */}
+                <div className='flex justify-center'>
+                    <button className='text-center mt-10
+                    cursor-pointer bg-primary text-white py-1 px-1
+                    rounded-md'>
+                        View All Button
+                    </button>
                 </div>
             </div>
         </div>

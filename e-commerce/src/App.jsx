@@ -2,7 +2,11 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
+import TopProducts from "./components/TopProducts/TopProducts";
+import Banner from "./components/Banner/Banner";
+import Subscribe from "./components/Subscribe/Subscribe";
 import AOS from "aos"
+import "aos/dist/aos.css"
 const App = () =>{
 
       React.useEffect(()=>{
@@ -18,9 +22,13 @@ const App = () =>{
 
    return(
          <div className=" ">
-          <Navbar/>
-          <Hero/>
-          <Products/>
+            <Navbar/>
+            <Hero/>
+            <Products/>
+            <TopProducts/>
+            <Banner/>
+            <Subscribe/>
+            <Products/>
          </div>
    );
 
