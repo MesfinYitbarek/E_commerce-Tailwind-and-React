@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa6'
-import Img1 from "../../assets/women/img1.png"
-import Img2 from "../../assets/women/img2.png"
-import Img3 from "../../assets/women/img3.png"
+import Img1 from "../../assets/shirts/image1.png"
+import Img2 from "../../assets/shirts/image2.png"
+import Img3 from "../../assets/shirts/image3.png"
 
 const ProductsData =[
     {
@@ -55,7 +55,7 @@ const TopProducts = () => {
                         {/* image section */}
                         <div className='h-[100px]'>
                             <img src={data.img} alt=''
-                                className='max-w[140px] block max-auto
+                                className='max-w-[140px] block mx-auto
                                 transform -translate-y-20
                                 group-hover:scale-105 duration-300
                                 drop-shadow-md'

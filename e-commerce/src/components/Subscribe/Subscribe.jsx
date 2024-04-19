@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from "../../assets/website/orange-pattern.jpg"
+import Banner from "../../assets/shirts/image3.png"
 
 const BannerImg ={
     backgroundImage:`url(${Banner})`,
@@ -14,7 +14,7 @@ const Subscribe = () => {
     <div
         data-aos="zoom-in"
         className='mb-20 bg-gray-100 dark:bg-gray-800
-        text-white'
+        dark:text-white'
         style={BannerImg} 
     >
         <div className='container backdrop-blur-sm py-10'>
@@ -27,7 +27,7 @@ const Subscribe = () => {
                     data-aos="fade-up"
                     type='text'
                     placeholder='Enter your Email'
-                    className='w-full p-3'
+                    className='w-full p-3 text-black'
                 />
 
             </div>

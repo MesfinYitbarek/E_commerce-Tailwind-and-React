@@ -49,7 +49,7 @@ const DropdownLinks=[
         link:"/#"
     }
 ]
-const Navbar = () =>{
+const Navbar = ({handleOrderPopup}) =>{
 
    return(
          <div className="shadow-md bg-white 
@@ -91,7 +91,7 @@ const Navbar = () =>{
                             top-1/2 -translate-y-1/2 right-3"/>
                         </div>
                         {/*order button*/}
-                        <button onClick={()=> alert("Ordering not available yet")}
+                        <button onClick={()=> handleOrderPopup()}
                             className="bg-gradient-to-r from-primary
                             to-secondary translation-all duration-200
                             text-white py-1 px-4 rounded-full flex 
